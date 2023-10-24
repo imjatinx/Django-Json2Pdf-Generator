@@ -1,0 +1,106 @@
+{% comment %} <!DOCTYPE html>
+<html>
+<head>
+    <title>Progressive Columns PDF</title>
+    <!-- Include Bootstrap CSS from a CDN or local path -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css">
+
+    <style>
+        @page {
+            size: A4;
+            padding: 0;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .bordered {
+            border: 1px solid #000;
+        }
+
+        .bg-blue {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .bg-red {
+            background-color: #ff5733;
+            color: #fff;
+        }
+
+        .bg-green {
+            background-color: #29cc61;
+            color: #fff;
+        }
+
+        .bg-gray {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="bordered">
+        <div class="row">
+            <div class="col-2 mx-auto bordered bg-blue p-1">
+                <h4>Column 4</h4>
+                <p>Data for Column 4</p>
+            </div>
+            <div class="col-2 mx-auto bordered bg-red p-1">
+                <h4>Column 3</h4>
+                <p>Data for Column 3</p>
+            </div>
+            <div class="col-2 mx-auto bordered bg-green p-1">
+                <h4>Column 2</h4>
+                <p>Data for Column 2</p>
+            </div>
+            <div class="col-2 mx-auto bordered bg-gray p-1">
+                <h4>Column 1</h4>
+                <p>Data for Column 1</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html> {% endcomment %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Two-Column PDF</title>
+    <!-- Include Bootstrap CSS from a CDN or local path -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/`npm/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        @page {
+            size: A4; /* Set your desired page size */
+            margin: 0;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="bg-primary text-white p-3">
+                    <h1>Column 1</h1>
+                </div>
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Email:</strong> johndoe@example.com</p>
+                <!-- Add more data for Column 1 as needed -->
+            </div>
+            <div class="col">
+                <div class="bg-danger text-white p-3">
+                    <h1>Column 2</h1>
+                </div>
+                <p><strong>Address:</strong> 123 Main Street</p>
+                <p><strong>City:</strong> Anytown</p>
+                <p><strong>Country:</strong> Exampleland</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
