@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{% url "generate_pdf" %}" method="post">
+        {% csrf_token %}
+        <select name="template" id="">
+            <option value="None" selected disabled>Select a Template design</option>
+            {% for template in templates %}
+            <option value="{{template.templatePath}}">{{template.name}}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Download">
+    </form>
+</body>
+
+</html>

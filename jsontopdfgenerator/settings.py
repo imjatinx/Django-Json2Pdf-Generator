@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'mytemplates'
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'jsontopdfgenerator.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['jsontopdfgenerator/templates/'],
+        'DIRS': ['mytemplates/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
